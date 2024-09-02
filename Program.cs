@@ -1,17 +1,20 @@
 ﻿//Array Insertions and Deletions
 
 //Array Declaration
-int[] intArray = new int[8];
+using DataStructureAndAlgorithm.LinkedList;
+using System.Collections.Generic;
 
-//size of the array
-int length = 0;
+//int[] intArray = new int[8];
 
-///fill the array
-for (int i = 0; i < 8; i++)
-{
-    intArray[length] = i + 1;
-    length++;
-}
+////size of the array
+//int length = 0;
+
+/////fill the array
+//for (int i = 0; i < 8; i++)
+//{
+//    intArray[length] = i + 1;
+//    length++;
+//}
 
 //ARRAY INSERTION AT END
 //intArray[length] = 8;
@@ -29,16 +32,32 @@ for (int i = 0; i < 8; i++)
 //int value = 0;
 
 //LINEAR SEARCH
-bool LinearSearch(int[] intArray, int key)
-{
-    for (int i = 0;i < intArray.Length;i++)
-    {
-        if (intArray[i] == key)
-        {
-            return true;
-        }
-    }
-    return false;
-}
+//bool LinearSearch(int[] intArray, int key)
+//{
+//    for (int i = 0;i < intArray.Length;i++)
+//    {
+//        if (intArray[i] == key)
+//        {
+//            return true;
+//        }
+//    }
+//    return false;
+//}
 
-Console.WriteLine(LinearSearch(intArray, 5));
+//Console.WriteLine(LinearSearch(intArray, 5));
+
+LinkedList linkedList = new LinkedList();
+
+linkedList.InsertFirst(1);
+linkedList.InsertFirst(2);
+linkedList.InsertFirst(3);
+linkedList.InsertFirst(4);
+linkedList.InsertFirst(5);
+
+linkedList.DeleteFirst();
+linkedList.DeleteFirst();
+
+linkedList.InsertLast(44);
+linkedList.DisplayList();
+
+Console.WriteLine("I love you");
