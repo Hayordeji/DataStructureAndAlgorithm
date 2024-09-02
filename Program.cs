@@ -65,17 +65,17 @@ using System.Collections.Generic;
 
 //Console.WriteLine("I love you");
 
-//STACK AND ITS IMPLEMENTATION
-Stack stack = new Stack(10);
+////STACK AND ITS IMPLEMENTATION
+//Stack stack = new Stack(10);
 
-for (int i = 0; i < 3; i++)
-{
-    stack.Push("Ayodeji");
-    stack.Push("Anu");
-    stack.Push("Ife");
-}
+//for (int i = 0; i < 3; i++)
+//{
+//    stack.Push("Ayodeji");
+//    stack.Push("Anu");
+//    stack.Push("Ife");
+//}
 
-stack.Pop();
-stack.Pop();
+//stack.Pop();
+//stack.Pop();
 
-stack.Peek();
+//stack.Peek();
