@@ -2,6 +2,7 @@
 
 //Array Declaration
 using DataStructureAndAlgorithm.LinkedList;
+using DataStructureAndAlgorithm.Stack;
 using System.Collections.Generic;
 
 //int[] intArray = new int[8];
@@ -46,18 +47,35 @@ using System.Collections.Generic;
 
 //Console.WriteLine(LinearSearch(intArray, 5));
 
-LinkedList linkedList = new LinkedList();
+//LINKED LIST AND ITS IMPLEMENTATION
 
-linkedList.InsertFirst(1);
-linkedList.InsertFirst(2);
-linkedList.InsertFirst(3);
-linkedList.InsertFirst(4);
-linkedList.InsertFirst(5);
+//LinkedList linkedList = new LinkedList();
 
-linkedList.DeleteFirst();
-linkedList.DeleteFirst();
+//linkedList.InsertFirst(1);
+//linkedList.InsertFirst(2);
+//linkedList.InsertFirst(3);
+//linkedList.InsertFirst(4);
+//linkedList.InsertFirst(5);
 
-linkedList.InsertLast(44);
-linkedList.DisplayList();
+//linkedList.DeleteFirst();
+//linkedList.DeleteFirst();
 
-Console.WriteLine("I love you");
+//linkedList.InsertLast(44);
+//linkedList.DisplayList();
+
+//Console.WriteLine("I love you");
+
+//STACK AND ITS IMPLEMENTATION
+Stack stack = new Stack(10);
+
+for (int i = 0; i < 3; i++)
+{
+    stack.Push("Ayodeji");
+    stack.Push("Anu");
+    stack.Push("Ife");
+}
+
+stack.Pop();
+stack.Pop();
+
+stack.Peek();
