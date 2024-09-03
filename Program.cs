@@ -2,6 +2,7 @@
 
 //Array Declaration
 using DataStructureAndAlgorithm.LinkedList;
+using DataStructureAndAlgorithm.Queue;
 using DataStructureAndAlgorithm.Stack;
 using System.Collections.Generic;
 
@@ -79,3 +80,21 @@ using System.Collections.Generic;
 //stack.Pop();
 
 //stack.Peek();
+
+
+//QUEUE AND IT'S IMPLEMENTATION
+
+Queue queue = new Queue(10);
+
+queue.Enqueue(1);
+queue.Enqueue(2);
+queue.Enqueue(3);
+queue.Enqueue(4);
+queue.Enqueue(5);
+queue.Enqueue(6);
+
+queue.Dequeue();
+queue.Dequeue();
+queue.Enqueue(100);
+
+queue.Peek();

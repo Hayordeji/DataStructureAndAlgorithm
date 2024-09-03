@@ -26,7 +26,7 @@ namespace DataStructureAndAlgorithm.Queue
         public void Enqueue(int data)
         {
             Rear++;
-            QueueArray[Front] = data;
+            QueueArray[Rear] = data;
             NItems++;
         }
 
