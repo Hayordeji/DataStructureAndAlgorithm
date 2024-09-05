@@ -82,19 +82,50 @@ using System.Collections.Generic;
 //stack.Peek();
 
 
-//QUEUE AND IT'S IMPLEMENTATION
+////QUEUE AND IT'S IMPLEMENTATION
 
-Queue queue = new Queue(10);
+//Queue queue = new Queue(10);
 
-queue.Enqueue(1);
-queue.Enqueue(2);
-queue.Enqueue(3);
-queue.Enqueue(4);
-queue.Enqueue(5);
-queue.Enqueue(6);
+//queue.Enqueue(1);
+//queue.Enqueue(2);
+//queue.Enqueue(3);
+//queue.Enqueue(4);
+//queue.Enqueue(5);
+//queue.Enqueue(6);
 
-queue.Dequeue();
-queue.Dequeue();
-queue.Enqueue(100);
+//queue.Dequeue();
+//queue.Dequeue();
+//queue.Enqueue(100);
 
-queue.Peek();
+//queue.Peek();
+
+int[] intArray = { 3, 5, 8, 12, 15, 16, 18, 21, 28, 38, 43, 51, 54 };
+
+
+////BINARY SEARCH AND ITS IMPLEMENTATION
+//var result = BinarySearch(intArray, 12);
+//Console.WriteLine(result);
+
+//int BinarySearch(int[] intArray, int value)
+//{
+//    int start = 0;
+//    int end = intArray.Length - 1;
+
+//    while (start < end)
+//    {
+//        int midpoint = (start + end) / 2;
+//        if (intArray[midpoint] == value)
+//        {
+//            return intArray[midpoint];
+//        }
+//        else if (intArray[midpoint] < value) 
+//        { 
+//            start = midpoint + 1;
+//        }
+//        else 
+//        { 
+//            end = midpoint;
+//        }
+//    }
+//    return -1;  
+//}
