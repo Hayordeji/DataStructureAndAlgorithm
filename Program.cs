@@ -99,7 +99,7 @@ using System.Collections.Generic;
 
 //queue.Peek();
 
-int[] intArray = { 3, 5, 8, 12, 15, 16, 18, 21, 28, 38, 43, 51, 54 };
+
 
 
 ////BINARY SEARCH AND ITS IMPLEMENTATION
@@ -129,3 +129,23 @@ int[] intArray = { 3, 5, 8, 12, 15, 16, 18, 21, 28, 38, 43, 51, 54 };
 //    }
 //    return -1;  
 //}
+
+int[] intArray = { 5, 20, 89, 42, 12, 16, 18, 21, 49, 38, 43, 51, 54 };
+int[] BubbleSort(int[] intArray)
+{
+    int temp = 0;
+    for (int pointer = 0;  pointer < intArray.Length - 1; pointer++)
+    {
+        for (int sort = 0; sort < intArray.Length; sort++)
+        {
+            if (intArray[sort] > intArray[sort + 1])
+            {
+                temp = intArray[sort + 1];
+                intArray[sort + 1] = intArray[sort];
+                intArray[sort] = temp;
+            }
+        }
+    }
+    return intArray;
+}
+int joker = 4;
