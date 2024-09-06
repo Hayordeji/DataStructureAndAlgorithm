@@ -130,23 +130,25 @@ using System.Collections.Generic;
 //    return -1;  
 //}
 
-int[] intArray = { 5, 20, 89, 42, 12, 16, 18, 21, 49, 38, 43, 51, 54 };
-Console.WriteLine(BubbleSort(intArray));
-int[] BubbleSort(int[] intArray)
-{
-    int temp = 0;
-    for (int pointer = 0;  pointer < intArray.Length - 1; pointer++)
-    {
-        for (int sort = 0; sort < intArray.Length - 1; sort++)
-        {
-            if (intArray[sort] > intArray[sort + 1])
-            {
-                temp = intArray[sort + 1];
-                intArray[sort + 1] = intArray[sort];
-                intArray[sort] = temp;
-            }
-        }
-    }
-    return intArray;
-}
-int joker = 4;
+
+////BUBBLE SORT AND ITS IMPLEMENTATION
+//int[] intArray = { 5, 20, 89, 42, 12, 16, 18, 21, 49, 38, 43, 51, 54 };
+//Console.WriteLine(BubbleSort(intArray));
+//int[] BubbleSort(int[] intArray)
+//{
+//    int temp = 0;
+//    for (int pointer = 0;  pointer < intArray.Length - 1; pointer++)
+//    {
+//        for (int sort = 0; sort < intArray.Length - 1; sort++)
+//        {
+//            if (intArray[sort] > intArray[sort + 1])
+//            {
+//                temp = intArray[sort + 1];
+//                intArray[sort + 1] = intArray[sort];
+//                intArray[sort] = temp;
+//            }
+//        }
+//    }
+//    return intArray;
+//}
+//int joker = 4;
